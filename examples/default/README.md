@@ -10,7 +10,9 @@
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| kubernetes | 1.11.3 |
 
 ## Providers
 
@@ -22,6 +24,8 @@ No input.
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| this | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
