@@ -23,11 +23,10 @@ Terraform module to deploy runscope-radar on kubernetes.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | additionnal\_args | List of additionnal arguments to pass to runscope-radar. | `list(string)` | `[]` | no |
-| agent\_id | ID of the runscope-radar. | `string` | n/a | yes |
 | annotations | Additionnal annotations that will be merged on all resources. | `map` | `{}` | no |
 | deployment\_annotations | Additionnal annotations that will be merged on the deployment. | `map` | `{}` | no |
 | deployment\_labels | Additionnal labels that will be merged on the deployment. | `map` | `{}` | no |
-| deployment\_name | Name of the deployment that will be create. | `string` | `"oracledb-exporter"` | no |
+| deployment\_name | Name of the deployment that will be create. | `string` | `"runscope-radar"` | no |
 | deployment\_template\_annotations | Additionnal annotations that will be merged on the deployment template. | `map` | `{}` | no |
 | deployment\_template\_labels | Additionnal labels that will be merged on the deployment template. | `map` | `{}` | no |
 | enabled | Whether or not to enable this module. | `bool` | `true` | no |
@@ -40,7 +39,7 @@ Terraform module to deploy runscope-radar on kubernetes.
 | replicas | Number of replicas to deploy. | `number` | `1` | no |
 | secret\_annotations | Additionnal annotations that will be merged for the secret. | `map` | `{}` | no |
 | secret\_labels | Additionnal labels that will be merged for the secret. | `map` | `{}` | no |
-| secret\_name | Name of the secret that will be created. | `string` | `"oracledb-exporter"` | no |
+| secret\_name | Name of the secret that will be created. | `string` | `"runscope-radar"` | no |
 | team\_id | ID of the team this runscope-radar belongs to. | `string` | n/a | yes |
 | token | Token to use to connect to runscope. | `string` | n/a | yes |
 

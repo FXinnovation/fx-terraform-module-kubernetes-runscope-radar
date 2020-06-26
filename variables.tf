@@ -26,11 +26,6 @@ variable "namespace" {
 # Application
 #####
 
-variable "agent_id" {
-  description = "ID of the runscope-radar."
-  type        = string
-}
-
 variable "team_id" {
   description = "ID of the team this runscope-radar belongs to."
   type        = string
@@ -68,7 +63,7 @@ variable "deployment_labels" {
 
 variable "deployment_name" {
   description = "Name of the deployment that will be create."
-  default     = "oracledb-exporter"
+  default     = "runscope-radar"
 }
 
 variable "deployment_template_annotations" {
@@ -117,5 +112,5 @@ variable "secret_labels" {
 
 variable "secret_name" {
   description = "Name of the secret that will be created."
-  default     = "oracledb-exporter"
+  default     = "runscope-radar"
 }

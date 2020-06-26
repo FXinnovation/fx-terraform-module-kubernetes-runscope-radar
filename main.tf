@@ -77,15 +77,8 @@ resource "kubernetes_deployment" "this" {
           image             = "${var.image_name}:${var.image_version}"
           image_pull_policy = var.image_pull_policy
 
-          args = concat(
-            [
-              "--agent-id=${var.agent_id}",
-              "--team-id=${var.team_id}",
-              "--name=${var.name}",
-              "--token=$${RUNSCOPE_TOKEN}"
-            ],
-            var.additionnal_args
-          )
+          command = ["sh", "-c", "/usr/local/bin/runscope-radar --team-id=${var.team_id} --name=${var.name} --token=$${RUNSCOPE_TOKEN}"]
+          args    = var.additionnal_args
 
           env {
             name = "RUNSCOPE_TOKEN"
