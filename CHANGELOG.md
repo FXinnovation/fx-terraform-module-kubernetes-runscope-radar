@@ -3,6 +3,7 @@
 =====
 
 * feat: (BREAKING CHANGE) Update to version 2.x for kubernetes provider
+* chore: bump pre-commit hooks
 
 0.1.1
 =====
