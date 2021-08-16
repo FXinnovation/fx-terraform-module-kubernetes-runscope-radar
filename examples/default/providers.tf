@@ -1,4 +1,3 @@
 provider "kubernetes" {
-  version          = "1.11.3"
-  load_config_file = true
+  config_path = "~/.kube/config"
 }
